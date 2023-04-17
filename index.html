@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VX SMS BOMBER</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Add any additional styles for animations here */
+    #hero-title {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    #hero-subtitle {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    #hero-cta {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <section id="hero">
+    <div class="container">
+      <h1 id="hero-title">VX SMS BOMBER 1.3</h1>
+      <p id="hero-subtitle">BD BEST BOMBER. EASY TO USE. BD TOP SMS BOMBER <br><br>
+         Unlimited SMS Bombing<br>
+         Unlimited Call Bombing<br>
+         Unlimited Custom SMS Send<br>
+           Unlimited Telegram Bombing
+        </p>
+      <a href="https://github.com/teamxfire/VXBOMBER/raw/main/VX%20SMS%20BOMBER%201.3.apk" class="cta" id="hero-cta">Download Now</a>
+        <footer>
+    <p>&copy; 2023 VX Bomber App. All rights reserved.</p>
+  </footer>
+    </div>
+  </section>
+  <script>
+    // Animation for hero title
+    const heroTitle = document.getElementById('hero-title');
+    heroTitle.style.opacity = '0';
+    heroTitle.style.transform = 'translateX(-150px)';
+    setTimeout(() => {
+      heroTitle.style.opacity = '1';
+      heroTitle.style.transform = 'translateX(0)';
+    }, 1000);
+    
+    // Animation for hero subtitle
+    const heroSubtitle = document.getElementById('hero-subtitle');
+    heroSubtitle.style.opacity = '0';
+    heroSubtitle.style.transform = 'translateX(50px)';
+    setTimeout(() => {
+      heroSubtitle.style.opacity = '1';
+      heroSubtitle.style.transform = 'translateX(0)';
+    }, 800);
+    
+    // Animation for hero CTA button
+    const heroCta = document.getElementById('hero-cta');
+    heroCta.style.opacity = '0';
+    heroCta.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+      heroCta.style.opacity = '1';
+      heroCta.style.transform = 'translateY(0)';
+    }, 1100);
+  </script>
+</body>
+</html>
